@@ -1,0 +1,63 @@
+Q1
+Objective: Write a web app in the index.html file that meets the following requirements.
+
+Submit only index.html to this question.  No need for CSS nor the entire file structure.
+Submit MSWord.docx containing Design Documents to question 2.
+ 
+
+Real Life Game
+This game is based on a game played by two players, where one calls even or odd, then both players on the count of three extend from 1 to 4 fingers of one hand.  The win loss conditions are explained in 5 - 8 below. 
+
+Computer Gameplay Summary
+This gameplay is modified slightly from this format to be suitable for computer play.  In the computer played version the human player is the one calling even or odd by entering it into a prompt. The computer generates both numbers, calculates their sum, determines if the sum is even or odd, displays the game results, keeps a record of the human player's wins and losses, and displays the tally with the game results.
+
+Determine on your own the mathematics to determine whether the sum of the two randomized numbers is even or odd.  Do Not ask this question in the classroom.
+
+Requirements
+The player will enter their name first and the computer will use the player name in all messages. 
+(This should be exactly the same as we have been doing with BNH.)
+Before each play, the human player will call whether the total number count will be an even number or an odd number.
+For this computerized version the human player will enter one of the words "even" or "odd" in a prompt.
+User input should be case insensitive.
+On the count of three the computer will randomize two numbers from 1 to 4 inclusive.
+The computer adds the two numbers together.
+If the sum of the numbers is even and the human player called it called even, that player wins.
+If the sum of the numbers is odd and the human player called it called even, that player looses.
+If the sum of the numbers is odd and the human player called it called odd, that player wins.
+If the sum of the numbers is odd and the human player called it called even, that player looses.
+The computer displays the game results in a sentence as given below.
+playerName, you chose playerChoice, the sum was number which is an even/odd number, you win/lose!
+The computer keeps track of the human player's wins and losses.
+The computer displays to the human player their total number of wins and losses after each game play.
+Use a prompt to display game results, win/loss totals, and query to play again.
+Allow the player to play as many times as they want.
+Since the player name is already stored in a variable, there is no need to ask for it after the first play.
+For invalid or empty input from player, continue prompting player for valid input, provide example of expected input.
+No need for the total number of wins and losses to persist after a playing session.
+Required game results and win/loss record:
+
+"Phil, you chose even, the sum was 7, which is an odd number, you Lose!
+That's 3 wins and 5 losses!
+Would you like to play again? y/n"
+
+Definition of "Game Session" & "Playing Session"
+Game Session: One loop of player entering "even" or "odd", numbers generated, numbers compared, required game results displayed.
+
+Playing Session: Multiple Game Sessions that end when a player enters "n" when asked to play again.
+
+Design Documents
+Create a diagram of the game flow from beginning to end showing game entry, looping structures, and game exit.
+Create a truth table of multiple outcomes based on Requirements 5 - 8. (Refer to the truth table in BNH to see what to apply here.)
+Submit your design documents as an MSWord.docx using Question 2.
+ 
+
+Submission Details
+Upload index.html containing your code to Question 1.
+
+For full credit index.html must run and look as specified.
+
+Q2
+Design Documents
+Create a diagram of the game flow containing every step of the program logic and activities, from beginning to end showing game entry, looping structures, and game exit.
+Create a truth table of multiple outcomes based on Requirements 5 - 8. (Refer to the truth table in BNH to see what to apply here.)
+Submit your design documents as an MSWord.docx using this file upload.
