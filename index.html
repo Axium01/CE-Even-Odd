@@ -65,12 +65,20 @@
                 }
                 // logic for figuring out wins and losses.
                 // we only really need to check if the input is equal to the rng type (odd/even).
-                if (userChoice.equals(rngEO)) {
+                if (userChoice === rngEO) {
                     wins++;
                     userWL = "win";
                 } else {
                     losses++;
                     userWL = "lose";
+                }
+                userLoop = prompt(userName + ", blabla " + userChoice + ". The sum was " + rngSum + ", which is an " 
+                                  + rngEO + ", you " + userWL + "!\n That's " + wins + "wins and " + losses + "losses!"
+                                  + "Would you like to play again? (y/n)");
+                userLoop = userLoop.toLowerCase(); // make it case-insensitive
+                while (!(userLoop === "even") && !(userLoop === "odd")) {
+                    userLoop = prompt('Please enter either Y or N if you want to play again.');
+                    userLoop = userLoop.toLowerCase(); // make it case-insensitive
                 }
             }
         </script>
