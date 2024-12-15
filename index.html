@@ -50,10 +50,16 @@
                 userChoice = "DUMMY";
                 userWL = "------";
                 userChoice = prompt('Do you think the number will be odd or even?');
+                if (userChoice === null) {
+                    userChoice = "nuh uh!"
+                }
                 userChoice = userChoice.toLowerCase(); // make it case-insensitive
                 console.log(userChoice);
                 while (!(userChoice ==="even") && !(userChoice === "odd")) {
                     userChoice = prompt('Please enter either even or odd.');
+                    if (userChoice === null) {
+                        userChoice = "nuh uh!"
+                    }
                     userChoice = userChoice.toLowerCase(); // make it case-insensitive
                 }
                 alert("1...");
@@ -86,9 +92,15 @@
                 userLoop = prompt(userName + ", blabla " + userChoice + ". The sum was " + rngSum + ", which is an " 
                                   + rngEO + ", you " + userWL + "!\nThat's " + wins + "wins and " + losses + "losses!"
                                   + "\nWould you like to play again? (y/n)");
+                if (userLoop === null) {
+                    userLoop = "nuh uh!"
+                }
                 userLoop = userLoop.toLowerCase(); // make it case-insensitive
                 while (!(userLoop === "y") && !(userLoop === "n")) {
                     userLoop = prompt('Please enter either Y or N if you want to play again.');
+                    if (userLoop === null) {
+                        userLoop = "nuh uh!"
+                    }
                     userLoop = userLoop.toLowerCase(); // make it case-insensitive
                 }
                 if (userLoop === "y") {
