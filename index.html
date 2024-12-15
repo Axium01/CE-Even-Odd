@@ -18,12 +18,18 @@
             countdown...
             generate rng values, then add them to figure out the sum.
             find out if the sum is even or odd, then keep a "label" for the type of number that the sum is.
+                |> note: the label can only be "even" or "odd". this will also be lowercase, like the user input.
             if the user's input was equal to that label, they win! otherwise, they lose.
             add +1 to the win/loss variable(s) depending on if the user won or lost.
             show the results message and ask the user if they would like to play again (reffered to in the code as looping)
                 |> if the user's input is invalid (neither y or n), reask the previous question.
             if the user's input is "y", end the loop.
             ** LOOP ENDS HERE **
+            
+            if: user input == the label, the user wins
+            else: the user loses (only "even" and "odd" are accepted as inputs, meaning the user can't type anything else)
+            if: user loop input == y, continues loop
+            else: loop ends (only n is accepted as the input that causes this)
             */
 
             
