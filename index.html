@@ -40,6 +40,7 @@
             let loop = true;
             let userLoop = "DUMMY";
             let userName = prompt('Please enter your name to get started.');
+            console.log(userName);
             //loop
             while (loop == true) {
                 rngValue1 = 0;
@@ -50,6 +51,7 @@
                 userWL = "------";
                 userChoice = prompt('Do you think the number will be odd or even?');
                 userChoice = userChoice.toLowerCase(); // make it case-insensitive
+                console.log(userChoice);
                 while (!(userChoice ==="even") && !(userChoice === "odd")) {
                     userChoice = prompt('Please enter either even or odd.');
                     userChoice = userChoice.toLowerCase(); // make it case-insensitive
