@@ -9,18 +9,60 @@
     </head>
     <body>
         <script>
+            /* diagram 
+            
+            
+            
+            
+            
+            */
+
+            
+            // outside of loop, this is for setting up everything
             let rngSum = 0;
-            let rngValue1 = 0
-            let rngValue2 = 0
-            let userName = prompt('Please enter your name to get started: ');
+            let rngValue1 = 0;
+            let rngValue2 = 0;
+            let rngTotal = 0;
+            let rngEO = "INITIAL";
+            let wins = 0;
+            let losses = 0;
+            let userChoice = "NO CHOICE";
+            let loop = true;
+            let userName = prompt('Please enter your name to get started.');
             //loop
-            let userChoice = prompt('odd/even?');
-            alert("1");
-            alert("2");
-            alert("3");
-            rngValue1 = Math.floor(Math.random() * 4) + 1;
-            rngValue2 = Math.floor(Math.random() * 4) + 1;
-            rngSum = rngValue1 + rngValue2;
+            while (loop == true) {
+                rngValue1 = 0;
+                rngValue2 = 0;
+                rngSum = 0;
+                rngEO = "INITIAL";
+                userChoice = prompt('Do you think the number will be odd or even?');
+                userChoice = userChoice.toLowerCase(); // make it case-insensitive
+                alert("1...");
+                alert("2...");
+                alert("3!");
+                // create rng values
+                rngValue1 = Math.floor(Math.random() * 4) + 1;
+                rngValue2 = Math.floor(Math.random() * 4) + 1;
+                rngSum = rngValue1 + rngValue2;
+                // figure out if the number is even or odd
+                if (rngSum % 2 == 0) {
+                    rngEO = "even";
+                } else {
+                    rngEO = "odd";
+                }
+                // logic for figuring out wins and losses
+                if (userChoice.equals()) {
+                    
+                } else if () {
+                    b
+                } else if () {
+                    c
+                } else if () {
+                    d
+                } else {
+                    e
+                }
+            }
         </script>
     </body>
 </html>
