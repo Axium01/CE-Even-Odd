@@ -23,20 +23,28 @@
             let rngValue1 = 0;
             let rngValue2 = 0;
             let rngTotal = 0;
-            let rngEO = "INITIAL";
+            let rngEO = "DUMMY";
             let wins = 0;
             let losses = 0;
-            let userChoice = "NO CHOICE";
+            let userChoice = "DUMMY";
+            let userWL = "------";
             let loop = true;
+            let userLoop = "DUMMY";
             let userName = prompt('Please enter your name to get started.');
             //loop
             while (loop == true) {
                 rngValue1 = 0;
                 rngValue2 = 0;
                 rngSum = 0;
-                rngEO = "INITIAL";
+                rngEO = "DUMMY";
+                userChoice = "DUMMY";
+                userWL = "------";
                 userChoice = prompt('Do you think the number will be odd or even?');
                 userChoice = userChoice.toLowerCase(); // make it case-insensitive
+                while (!userChoice.equals("even") && !userChoice.equals("odd")) {
+                    userChoice = prompt('Please enter either even or odd.');
+                    userChoice = userChoice.toLowerCase(); // make it case-insensitive
+                }
                 alert("1...");
                 alert("2...");
                 alert("3!");
@@ -44,23 +52,25 @@
                 rngValue1 = Math.floor(Math.random() * 4) + 1;
                 rngValue2 = Math.floor(Math.random() * 4) + 1;
                 rngSum = rngValue1 + rngValue2;
+                console.log("DEBUG: rngValue1 = " + rngValue1);
+                console.log("DEBUG: rngValue2 = " + rngValue2);
+                console.log("DEBUG: rngSum = " + rngSum);
                 // figure out if the number is even or odd
                 if (rngSum % 2 == 0) {
                     rngEO = "even";
+                    console.log("DEBUG: rngEO is Even");
                 } else {
                     rngEO = "odd";
+                    console.log("DEBUG: rngEO is Odd");
                 }
-                // logic for figuring out wins and losses
-                if (userChoice.equals()) {
-                    
-                } else if () {
-                    b
-                } else if () {
-                    c
-                } else if () {
-                    d
+                // logic for figuring out wins and losses.
+                // we only really need to check if the input is equal to the rng type (odd/even).
+                if (userChoice.equals(rngEO)) {
+                    wins++;
+                    userWL = "win";
                 } else {
-                    e
+                    losses++;
+                    userWL = "lose";
                 }
             }
         </script>
