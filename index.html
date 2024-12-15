@@ -41,7 +41,7 @@
                 userWL = "------";
                 userChoice = prompt('Do you think the number will be odd or even?');
                 userChoice = userChoice.toLowerCase(); // make it case-insensitive
-                while (!userChoice.equals("even") && !userChoice.equals("odd")) {
+                while (!(userChoice ==="even") && !(userChoice === "odd")) {
                     userChoice = prompt('Please enter either even or odd.');
                     userChoice = userChoice.toLowerCase(); // make it case-insensitive
                 }
